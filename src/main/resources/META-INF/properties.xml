@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- 
+  <property>
+    <name>dt.application.{appName}.operator.{opName}.prop.{propName}</name>
+    <value>some-default-value (if value is not specified, it is required from the user or custom config when launching)</value>
+  </property>
+  -->
+  <!-- memory assigned to app master
+  <property>
+    <name>dt.attr.MASTER_MEMORY_MB</name>
+    <value>1024</value>
+  </property>
+  -->
+  <property>
+    <name>dt.operator.kafkaInput.prop.topict</name>
+    <value>apex-sample-pipeline-test</value>
+  </property>
+  <property>
+    <name>dt.operator.kafkaInput.prop.zookeeper</name>
+    <value>localhost:2181</value>
+  </property>
+  <property>
+    <name>dt.operator.kafkaInput.prop.maxTuplesPerWindow</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>dt.operator.hdfsInput.prop.directory</name>
+    <value>src/main/resources/data/</value>
+  </property>
+</configuration>
+
